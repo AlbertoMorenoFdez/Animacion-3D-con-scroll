@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Savage";
+    src: url("../fonts/Savage.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Piratas2";
+    src: url("../fonts/freebooter.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 300vh;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    position: relative;
+}
+
+section {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    background-color: rgb(19, 19, 19);
+    color: black;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/templo2.jpg");
+    background-size: cover;
+    
+}
+
+#page2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color:white;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    text-align: right;
+    background-image: url("../img/templo2.jpg");
+    background-size: cover;
+}
+
+#page3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-image: url("../img/templo2.jpg");
+    background-size: cover;
+}
+
+#versosPage {
+    display: flex;
+    flex-direction: column;
+    margin: top;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+#titulo {
+    width: 100vw;
+    font-family: "Savage";
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-shadow: 
+        1px 0 1px red, 
+        -1px 0 1px red, 
+        0 1px 1px brown, 
+        0 -1px 1px red, 
+        1px 1px red, 
+        -1px -1px 1px red, 
+        1px -1px 1px red, 
+        -1px 1px 1px red;
+    filter: drop-shadow(5px 5px 5px rgb(217, 16, 16)); 
+}
+
+#versos1,
+#versos2,
+#versos3 {
+    font-family: "Piratas2";
+    font-size: 2em;
+}
+
+p {
+    margin: 5px
+}
+
+#versoBajo {
+    margin-bottom: 40px;
+}
+
